@@ -1,7 +1,7 @@
 # 🎬 Movie Database
 Movie Database — это учебный JavaScript-проект, демонстрирующий работу с DOM, событиями, асинхронными запросами, таймером, табами и модальными окнами. В проект встроен сервер с JSON-данными, реализована сборка с помощью Gulp и деплой на GitHub Pages.
 
-[👉 Демо на GitHub Pages] (https://mvamks.github.io/Movie_Database)
+[👉 Демо на GitHub Pages](https://mvamks.github.io/Movie_Database)
 
 ## 🧩 Основной функционал
     * ✅ Удаление рекламных блоков со страницы
