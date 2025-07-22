@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectmDB</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__search">
+            <form action="#">
+                <input type="text"  name = 'text' placeholder="Поиск">
+            </form>
+        </div>
+        <div class="header__logo">
+            <img src="icons/Logotype.svg" alt="logo">
+        </div>
+        <div class="header__right-block">
+            <button data-modal class="btn btn_white">Связаться с нами</button>
+        </div>
+    </header>
+    <main class="promo">
+        <div class="promo__menu">
+            <nav class="promo__menu-list">
+                <ul>
+                    <li><a class="promo__menu-item promo__menu-item_active" href="#">Фильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Сериалы</a></li>
+                    <li><a class="promo__menu-item" href="#">Мультфильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Клипы</a></li>
+                    <li><a class="promo__menu-item" href="#">Трейлеры</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="promo__content">
+            <div class="promo__list">
+                <div class="promo__item promo__bg">
+                    <div class="promo__genre">КОМЕДИЯ</div>
+                    <div class="promo__title">МАРСИАНИН</div>
+                    <div class="promo__descr">ИСТОРИЯ ЧЕЛОВЕКА, ВЫЖИВШЕГО НА ЧУЖОЙ ПЛАНЕТЕ В ОДИНОЧКУ</div>
+                    <div class="promo__ratings">
+                        <span>IMDb: 8.0</span>
+                        <span>Кинопоиск: 7.7</span>
+                    </div>
+                </div>
+                
+                <div class="promo__item promo__series">
+                    <div class="promo__title">Сериалы</div>
+                    <div class="promo__descr">Лучшие сериалы этого года</div>
+                    <div class="promo__ratings"></div>
+                </div>
+                <div class="promo__item promo__mults">
+                    <div class="promo__title">Мультфильмы</div>
+                    <div class="promo__descr">для всей семьи</div>
+                    <div class="promo__ratings"></div>
+                </div>
+                <div class="promo__item promo__clips">
+                    <div class="promo__title">&#9835</div>
+                    <div class="promo__descr">Музыка для каждого</div>
+                    <div class="promo__ratings"></div>
+                </div>
+                <div class="promo__item promo__trailers">
+                    <div class="promo__title">Трейлеры</div>
+                    <div class="promo__descr">Будь в курсе всех новинок</div>
+                    <div class="promo__ratings"></div>
+                </div>
+            </div>
+
+           
+            
+            <div class="promo__interactive">
+                <div>
+                    <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+                    <ul class="promo__interactive-list">
+                        <li class="promo__interactive-item">ЛОГАН
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛИГА СПРАВЕДЛИВОСТИ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛА-ЛА ЛЭНД
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ОДЕРЖИМОСТЬ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">СКОТТ ПИЛИГРИМ ПРОТИВ...
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo__interactive-title">ДОБАВИТЬ НОВЫЙ ФИЛЬМ</div>
+                        <span>Введите название фильма</span>
+                        <input class="adding__input" type="text" name = 'text' placeholder="Что уже посмотрено...?">
+                        <span>Сделать его любимым?</span>
+                        <input type="checkbox">
+                        <span class="yes">Да!</span>
+                        <button>Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="promotion">
+                <div class="bgc_y"></div>
+                <div class="container">
+                    <div class="promotion__text">
+                        <div class="title">Акция для новых клиентов!</div>
+                        <div class="promotion__descr">
+                            Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
+                            Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
+                            <br><br>
+                            Акция закончится 20 мая в 00:00
+                        </div>
+                    </div>
+                    <div class="promotion__timer">
+                        <div class="title">Осталось до конца акции:</div>
+                        <div class="timer">
+                            <div class="timer__block">
+                                <span id="days">12</span>
+                                дней
+                            </div>
+                            <div class="timer__block">
+                                <span id="hours">20</span>
+                                часов
+                            </div>
+                            <div class="timer__block">
+                                <span id="minutes">56</span>
+                                минут
+                            </div>
+                            <div class="timer__block">
+                                <span id="seconds">20</span>
+                                секунд
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="promo__connection">
+                    <button data-modal class= 'btn btn_dark'>Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo__adv">
+            <div class="promo__adv-title">Реклама от спонсоров</div>
+            <img src="img/content_1.jpg" alt="some picture">
+            <img src="img/content_2.jpg" alt="some picture">
+            <img src="img/content_3.png" alt="some picture">
+        </div>
+
+       
+    </main>
+
+    <div class="divider"></div>
+
+    
+    
+
+    <div class="modal hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
