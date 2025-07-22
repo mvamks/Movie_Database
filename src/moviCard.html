@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка фильма</title>
+    <style>
+        /* Простая стилизация карточки */
+        .movie-card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        .movie-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .movie-info {
+            color: #555;
+        }
+        .movie-description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="movie-card">
+    <div class="movie-title" id="title"></div>
+    <div class="movie-info">
+        <span id="genre"></span> | <span id="year"></span>
+    </div>
+    <div class="movie-description" id="description"></div>
+</div>
+
+<script>
+    // Данные о фильме
+    const movie = {
+        title: "Inception",
+        genre: "Sci-Fi",
+        year: 2010,
+        description: "A skilled thief is given a chance at redemption if he can successfully perform an inception."
+    };
+
+    // Отображение данных на странице
+    document.getElementById('title').textContent = movie.title;
+    document.getElementById('genre').textContent = movie.genre;
+    document.getElementById('year').textContent = movie.year;
+    document.getElementById('description').textContent = movie.description;
+</script>
+
+</body>
+</html>
